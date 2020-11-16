@@ -1,0 +1,8 @@
+/*!
+ * An empty stylesheet.
+ *
+ * To use for showing how the website looks when there is no style at all.
+ */
+body {
+    background-color: green;
+}
