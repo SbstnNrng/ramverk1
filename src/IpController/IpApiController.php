@@ -1,9 +1,10 @@
 <?php
 
-namespace Seb\Ip;
+namespace Seb\IpController;
 
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
+use Seb\IpModel\IpCheck;
 
 /**
  *

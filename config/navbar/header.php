@@ -78,5 +78,10 @@ return [
             "url" => "ip",
             "title" => "Validering av IP.",
         ],
+        [
+            "text" => "Ip-Geo",
+            "url" => "ip-geo",
+            "title" => "Ip-Geo",
+        ],
     ],
 ];

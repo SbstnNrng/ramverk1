@@ -1,16 +1,16 @@
 <?php
 
-namespace Seb\Ip;
+namespace Seb\IpController;
 
 use Anax\DI\DIFactoryConfig;
 use Anax\Response\ResponseUtility;
 use PHPUnit\Framework\TestCase;
-use Seb\IpController\IpController;
+use Seb\IpController\IpGeoController;
 
 /**
- * IpController test class.
+ * IpGeoController test class.
  */
-class IpControllerTest extends TestCase
+class IpGeoControllerTest extends TestCase
 {
     protected $di;
 
@@ -28,20 +28,20 @@ class IpControllerTest extends TestCase
 
     public function testIndexActionGet()
     {
-        $IpController = new IpController();
-        $IpController->setDI($this->di);
+        $IpGeoController = new IpGeoController();
+        $IpGeoController->setDI($this->di);
 
-        $res = $IpController->indexActionGet();
+        $res = $IpGeoController->indexActionGet();
 
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }
 
     public function testIndexActionPost()
     {
-        $IpController = new IpController();
-        $IpController->setDI($this->di);
+        $IpGeoController = new IpGeoController();
+        $IpGeoController->setDI($this->di);
 
-        $res = $IpController->indexActionPost();
+        $res = $IpGeoController->indexActionPost();
 
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Seb\Ip;
+namespace Seb\IpModel;
 
 class IpCheck
 {

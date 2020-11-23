@@ -5,12 +5,12 @@ namespace Seb\Ip;
 use Anax\DI\DIFactoryConfig;
 use Anax\Response\ResponseUtility;
 use PHPUnit\Framework\TestCase;
-use Seb\IpController\IpController;
+use Seb\IpController\IpGeoApiController;
 
 /**
- * IpController test class.
+ * IpApiController test class.
  */
-class IpControllerTest extends TestCase
+class IpGeoApiControllerTest extends TestCase
 {
     protected $di;
 
@@ -26,9 +26,10 @@ class IpControllerTest extends TestCase
         $this->di = $di;
     }
 
+
     public function testIndexActionGet()
     {
-        $IpController = new IpController();
+        $IpController = new IpGeoApiController();
         $IpController->setDI($this->di);
 
         $res = $IpController->indexActionGet();
@@ -36,13 +37,24 @@ class IpControllerTest extends TestCase
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }
 
-    public function testIndexActionPost()
+
+    public function testJsonIpGeoActionPost()
     {
-        $IpController = new IpController();
+        $IpController = new IpGeoApiController();
         $IpController->setDI($this->di);
 
-        $res = $IpController->indexActionPost();
+        $res = $IpController->jsonIpGeoActionPost();
 
-        $this->assertInstanceOf(ResponseUtility::class, $res);
+        $this->assertIsArray($res);
+    }
+
+    public function testJsonIpGeoActionGet()
+    {
+        $IpController = new IpGeoApiController();
+        $IpController->setDI($this->di);
+
+        $res = $IpController->jsonIpGeoActionGet();
+
+        $this->assertIsArray($res);
     }
 }

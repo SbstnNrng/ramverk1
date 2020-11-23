@@ -5,6 +5,7 @@ namespace Seb\Ip;
 use Anax\DI\DIFactoryConfig;
 use Anax\Response\ResponseUtility;
 use PHPUnit\Framework\TestCase;
+use Seb\IpController\IpApiController;
 
 /**
  * IpApiController test class.

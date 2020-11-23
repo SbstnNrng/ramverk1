@@ -11,7 +11,7 @@ return [
         [
             "info" => "IP-Validator",
             "mount" => "ip",
-            "handler" => "\Seb\Ip\IpController",
+            "handler" => "\Seb\IpController\IpController",
         ],
     ]
 ];

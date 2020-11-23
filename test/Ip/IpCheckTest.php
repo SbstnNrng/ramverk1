@@ -3,6 +3,7 @@
 namespace Seb\Ip;
 
 use PHPUnit\Framework\TestCase;
+use Seb\IpModel\IpCheck;
 
 /**
  * IpCheck test class.
@@ -13,7 +14,7 @@ class IpCheckTest extends TestCase
     public function testIpCheck()
     {
         $IpCheck = new IpCheck();
-        $this->assertInstanceOf("\Seb\Ip\IpCheck", $IpCheck);
+        $this->assertInstanceOf("\Seb\IpModel\IpCheck", $IpCheck);
 
         $ipTest = $IpCheck->checkIp("8.8.8.8");
         $domainStr = $IpCheck->checkDomain("8.8.8.8");

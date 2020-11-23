@@ -10,8 +10,8 @@ return [
     "routes" => [
         [
             "info" => "IP-Validator",
-            "mount" => "ip-api",
-            "handler" => "\Seb\IpController\IpApiController",
+            "mount" => "ip-geo",
+            "handler" => "\Seb\IpController\IpGeoController",
         ],
     ]
 ];

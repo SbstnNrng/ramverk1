@@ -1,6 +1,6 @@
 <?php
 
-namespace Seb\Ip;
+namespace Anax\View;
 
 ?>
 
