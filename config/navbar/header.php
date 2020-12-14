@@ -83,5 +83,10 @@ return [
             "url" => "ip-geo",
             "title" => "Ip-Geo",
         ],
+        [
+            "text" => "DI",
+            "url" => "di",
+            "title" => "di",
+        ],
     ],
 ];

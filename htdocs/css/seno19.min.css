@@ -215,3 +215,7 @@ html {
     margin-left: 0;
     margin-right: 0;
 }
+
+html body.route-di div.wrap-all div.outer-wrap.outer-wrap-main div.inner-wrap.inner-wrap-main div.row main.region-main table.tabell {
+    text-align: center;
+}
