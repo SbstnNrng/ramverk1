@@ -24,10 +24,10 @@ class DICheck
         $country = null;
         
         if ($ipIn) {
-            $lat = $res['latitude'];
-            $lon = $res['longitude'];
-            $city = $res['city'];
-            $country = $res['country_name'];
+            $lat = $res['latitude'] ?? null;
+            $lon = $res['longitude'] ?? null;
+            $city = $res['city'] ?? null;
+            $country = $res['country_name'] ?? null;
             $lat = round($lat, 3);
             $lon = round($lon, 3);
         }
