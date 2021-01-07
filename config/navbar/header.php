@@ -88,5 +88,10 @@ return [
             "url" => "di",
             "title" => "di",
         ],
+        [
+            "text" => "Book",
+            "url" => "book",
+            "title" => "Book",
+        ],
     ],
 ];
