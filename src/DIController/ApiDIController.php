@@ -5,7 +5,6 @@ namespace Seb\DIController;
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
 
-
 /**
  *
  */

@@ -54,7 +54,7 @@ class BookController implements ContainerInjectableInterface
         $book = new Book();
         $book->setDb($this->di->get("dbqb"));
 
-        $page->add("book/crud/view-all", [
+        $page->add("book/view-all", [
             "items" => $book->findAll(),
         ]);
 
@@ -76,7 +76,7 @@ class BookController implements ContainerInjectableInterface
         $form = new CreateForm($this->di);
         $form->check();
 
-        $page->add("book/crud/create", [
+        $page->add("book/create", [
             "form" => $form->getHTML(),
         ]);
 
@@ -98,7 +98,7 @@ class BookController implements ContainerInjectableInterface
         $form = new DeleteForm($this->di);
         $form->check();
 
-        $page->add("book/crud/delete", [
+        $page->add("book/delete", [
             "form" => $form->getHTML(),
         ]);
 
@@ -122,7 +122,7 @@ class BookController implements ContainerInjectableInterface
         $form = new UpdateForm($this->di, $id);
         $form->check();
 
-        $page->add("book/crud/update", [
+        $page->add("book/update", [
             "form" => $form->getHTML(),
         ]);
 

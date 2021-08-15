@@ -59,7 +59,7 @@ class DICheck
         $oneDayInSec = 60*60*24;
         $timestamp = time();
 
-        for ($i=0; $i < 5; $i++) { 
+        for ($i=0; $i < 5; $i++) {
             $timestamp -= $oneDayInSec;
             $url = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=".$lat."&lon=".$lon."&dt=".$timestamp."&appid=".$key."&units=metric&lang=se";
             array_push($urls, $url);
